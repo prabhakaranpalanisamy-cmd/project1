@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: silver                
+    database: SILVER            
+    schema: salesforce
+    quoting:
+            schema: true    
+    tables:
+      - name: ACCOUNT
+      - name: USER
