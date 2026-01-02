@@ -1,0 +1,1 @@
+select * from {{ ref('my_new_project', 'account_1') }}
