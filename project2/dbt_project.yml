@@ -39,4 +39,4 @@ models:
   my_new_project_2:
     +materialized: table
     +database: silver
-    +schema: test
+    +schema: dbt_test
