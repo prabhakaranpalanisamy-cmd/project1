@@ -39,11 +39,7 @@ models:
   my_new_project:
     +materialized: table
     +database: silver
-    +schema: >
-      {% if target.name == 'dev' %}
-        dev
-      {% elif target.name == 'qa' %}
-        qa
-      {% else %}
-        dbt_{{ target.user }}
-      {% endif %}
+    +schema: "{{ 
+      'dev' if target.name == 'dev'
+      else 'qa' if target.name == 'qa'
+      else target.schema}}"
