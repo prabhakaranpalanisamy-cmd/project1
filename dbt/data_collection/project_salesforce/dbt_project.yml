@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project_2'
+name: 'project_salesforce'
 version: '1.0.0'
 config-version: 2
 
@@ -36,7 +36,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project_2:
-    +materialized: table
+  project_salesforce:
+    +materialized: incremental
+    +incremental_strategy: append
     +database: silver
-    +schema: test

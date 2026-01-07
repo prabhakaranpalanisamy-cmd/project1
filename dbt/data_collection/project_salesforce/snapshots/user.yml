@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: user
+    description: "Salesforce User table"
+
+    tests:
+      - unique:
+          column_name: '"Id"'
+      - not_null:
+          column_name: '"Id"'
+      - not_null:
+          column_name: '"Username"'
+      - not_null:
+          column_name: '"Email"'
+      - not_null:
+          column_name: '"CreatedDate"'
+      - not_null:
+          column_name: '"SystemModstamp"'

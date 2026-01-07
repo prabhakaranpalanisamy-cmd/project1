@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bronze                
+    database: BRONZE            
+    schema: salesforce
+    quoting:
+            database: true
+            schema: true
+            identifier: true       
+    tables:
+      - name: Account
+      - name: RecordType 
+      - name: User
