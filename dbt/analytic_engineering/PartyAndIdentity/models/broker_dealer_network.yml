@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: broker_dealer_network
+    columns:
+      - name: SFDC_ID
+        description: "Salesforce ID"
+        tests:
+          - not_null
+          - unique
+      - name: NAME
+        tests:
+          - not_null
+      - name: OWNER_ID
+        tests:
+          - not_null
+      - name: AGREEMENT_DATE
+        tests:
+          - not_null
+      - name: STATUS
+        tests:
+          - not_null
+      - name: LATITUDE
+        tests:
+          - not_null
+      - name: LONGITUDE
+        tests:
+          - not_null

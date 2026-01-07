@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: recordtype
+    description: "Salesforce RecordType table"
+
+    tests:
+      - unique:
+          column_name: '"Id"'
+      - not_null:
+          column_name: '"Id"'
+      - not_null:
+          column_name: '"Name"'
+      - not_null:
+          column_name: '"CreatedDate"'
+      - not_null:
+          column_name: '"SystemModstamp"'

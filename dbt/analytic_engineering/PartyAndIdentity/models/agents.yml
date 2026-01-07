@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: agents
+    columns:
+      - name: AGENT_ID
+        description: "Unique agent identifier"
+        tests:
+          - not_null
+          - unique
+      - name: SFDC_ID
+        tests:
+          - not_null
+      - name: EMAIL
+        tests:
+          - unique
+      - name: FIRST_NAME
+        tests:
+          - not_null
+      - name: LAST_NAME
+        tests:
+          - not_null
+      - name: OWNER_ID
+        tests:
+          - not_null
+      - name: AGREEMENT_DATE
+        tests:
+          - not_null
+      - name: STATUS
+        tests:
+          - not_null
+      - name: NET_CONTRIBUTION_TOTAL
+        tests:
+          - not_null
