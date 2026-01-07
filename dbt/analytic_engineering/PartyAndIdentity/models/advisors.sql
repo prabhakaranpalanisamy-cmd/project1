@@ -1,5 +1,4 @@
 {{ config(
-    schema = '"PartyAndIdentity"',
     pre_hook = "TRUNCATE TABLE if exists {{ this }}",
     tags = ["salesforce"]
 ) }}
