@@ -1,0 +1,4 @@
+packages:
+  - git: "https://github.com/prabhakaranpalanisamy-cmd/project1.git"
+    revision: demo
+    subdirectory: dbt/analytic_engineering/PartyAndIdentity
