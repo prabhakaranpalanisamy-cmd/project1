@@ -41,6 +41,6 @@ models:
     +incremental_strategy: append
     +database: silver
     +schema: "{{ 
-      'dev' if target.name == 'dev'
+      'dev' if target.name == 'dev_test'
       else 'qa' if target.name == 'qa'
       else target.schema}}"
