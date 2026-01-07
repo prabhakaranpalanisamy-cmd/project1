@@ -1,4 +1,0 @@
-packages:
-  - local: ../project1
-    name: my_new_project
-sha1_hash: 4bc3f0e116d9309d257df4a8d80f9014ecb38ca0
