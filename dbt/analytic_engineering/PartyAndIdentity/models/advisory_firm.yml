@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: advisory_firm
+    columns:
+      - name: FIRM_ID
+        description: "Unique firm ID"
+        tests:
+          - not_null
+          - unique
+      - name: SFDC_ID
+        tests:
+          - not_null
+      - name: OWNER_ID
+        tests:
+          - not_null
+      - name: AGREEMENT_DATE
+        tests:
+          - not_null
+      - name: STATUS
+        tests:
+          - not_null
+      - name: NET_CONTRIBUTION_TOTAL
+        tests:
+          - not_null
+
