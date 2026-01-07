@@ -40,3 +40,7 @@ models:
     +materialized: incremental
     +incremental_strategy: append
     +database: silver
+    +schema: "{{ 
+      'dev' if target.name == 'dev'
+      else 'qa' if target.name == 'qa'
+      else target.schema}}"

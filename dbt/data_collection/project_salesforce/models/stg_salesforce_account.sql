@@ -1,5 +1,4 @@
 {{ config(
-    schema = '"salesforce"',
     pre_hook = "TRUNCATE TABLE if exists {{ this }}",
     tags = ["salesforce"]
 ) }}
