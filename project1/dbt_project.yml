@@ -43,4 +43,4 @@ models:
     +schema: "{{ 
       'dev' if target.name == 'dev2'
       else 'qa' if target.name == 'qa'
-      else target.schema}}"
+      else 'dev3'}}"
