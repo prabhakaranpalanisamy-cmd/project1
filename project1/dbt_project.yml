@@ -40,3 +40,7 @@ models:
     # Applies to all files under models/example/
     +materialized: table
     +database: silver
+    +schema: "{{ 
+      'dev' if target.name == 'dev'
+      else 'qa' if target.name == 'qa'
+      else target.schema}}"
