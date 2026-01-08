@@ -41,6 +41,6 @@ models:
     +materialized: table
     +database: silver
     +schema: "{{ 
-      'dev' if target.name == 'dev2'
+      'dev2' if target.name == 'dev'
       else 'qa' if target.name == 'qa'
       else 'dev3'}}"
